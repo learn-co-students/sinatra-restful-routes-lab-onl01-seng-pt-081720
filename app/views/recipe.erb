@@ -1,0 +1,10 @@
+<h2>Here are all your recipes, click "New Recipe" to add to the list</h2>
+
+<% @recipes = Recipe.all %> 
+<% @recipes.each do |r| %> 
+<ul>
+    <li><a href="/recipes/<%= r.id %>"><%= r.name %></a></li>
+</ul>
+<% end %> 
+
+<h3><a href="/recipes/new">New Recipe</a></h3>
