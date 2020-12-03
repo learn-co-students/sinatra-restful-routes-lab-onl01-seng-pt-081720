@@ -1,0 +1,7 @@
+<form method="POST" action="/recipes">
+<% Recipe.all.each do |r| %>
+<p>Name: <%= r.name %></p>
+<p>Ingredients: <%= r.ingredients %></p>
+<p>Cook Time: <%= r.cook_time %></p>
+<% end %>
+</form>
